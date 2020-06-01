@@ -1,0 +1,15 @@
+- File manage.py:  chứa các lệnh, các đoạn CT con con thực hiện bằng lệnh tạo project, tạo app, make, test, startproject, testserver, runserver,…. Dùng đẻ tương tác các lệnh.
+- Khi tạo Project sẽ tạo ra các file.py cấu hình. 
++ 1 modul trong python có ký hiệu __tenfile__.py ( __init__.py) để có thể import vào project
++ file urls.py: định nghĩa các đường dẫn 
++ File asgi.py và wsgi.py dùng để cấu hình khi dipnoise, vất lên server.
++ Settings.py: chứa cấu hình hệ thống và chạy đầu tiên khi chạy hệ thống. Chạy các app, web chạy trên ip nào, …
+- Khi tạo Myapp cũng tự tạo ra 6 file.py: sẽ code web trên myapp này
+mỗi một chức năng tạo 1 app, ví dụ chức năng giỏ hàng tạo 1 app, chức năng đăng bài viết tạo 1 cái app thì các dự án sau có thể dùng lại được cái app này.
++ Trong 1 cái app cũng giống như 1 modul và modul bắt buộc phải có file __init__.py
++ __init__.py để import vào project
++  Admin.py để quản trị hệ thống
++ apps.py: để định nghĩa app này tên là gì 
++ models.py: viết các model để tương tác với database, ví dụ định nghĩa phần mềm QLHS thì phải định về đối tượng sinh viên gồm MaSV, tenSV,… và tương tác với database
++ tests.py: Viết tự động test sao cho web liên quan đến kiểm thử. Tự test hoặc viết code để tự động test.
++ Views.py: kết dính tương tác giữa HTML, CSS
